@@ -26,7 +26,7 @@ class Algoritmos:
         for i in range ( delta_x ):
             y_i = self.puntoFin[0] +  m * x_inc
             x_inc += 1
-        #print("x_inc", x_inc)
+
             x_i += 1
             
             print("x =", x_i," / y = ", round( y_i ), "x incrementa-->: ", x_inc)
@@ -51,7 +51,7 @@ class Algoritmos:
             y_i += y_inc
             print("x =", round(x_i)," / y = ", round (y_i))
 
-        #algDda( [9,18], [14,22] )
+
 
     def algBresenham(self):
         print(f"--------Puntos: ({self.puntoIni}) y ({self.puntoFin})---------\n")
@@ -71,7 +71,7 @@ class Algoritmos:
                 p_i += ( 2 * delta_y - 2 * delta_x)
             print("x =", x_i," / y = ", y_i, "---- P : ", p_i)
     
-    # algoritmo para pintar una circunferencia
+    # algoritmo para una circunferencia
         
     def algMidpoint(self):
         radio=self.puntoFin
@@ -115,10 +115,10 @@ print("\n 1.Algoritmo Basico \n 2.Algoritmo DDA \n 3.Algoritmo Brsenham \n 4.Alg
 op=int(input("Ingrese la opcion:"))
 
 while op!=5:
-    basico= Algoritmos("Algoritmo Basico",[-2,1],[2,5]) #punto de prueba en donde los podra modificar
-    dda = Algoritmos("Algoritmo DDA",[-2,1],[2,5])
-    bresenham=Algoritmos( "Algoritmo Bresenham",[9,18], [14,22] )
-    circunferencia = Algoritmos("Algoritmo Punto Medio",[3,5], 5)
+    basico= Algoritmos("Algoritmo Basico",[4,1],[3,5]) #punto de prueba en donde los podra modificar
+    dda = Algoritmos("Algoritmo DDA",[-3,2],[2,5])
+    bresenham=Algoritmos( "Algoritmo Bresenham",[7,20], [17,25] )
+    circunferencia = Algoritmos("Algoritmo Punto Medio",[2,6], 4)
 
     if op==1:
         print("-----------------ALGORITMO BASICO-----------------\n")
